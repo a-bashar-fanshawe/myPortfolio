@@ -30,7 +30,6 @@ header {
 }
 
 /* Navigation */
-
 .topnav {
   overflow: hidden;
   background-color: #243849;
@@ -79,16 +78,15 @@ a {
 }
 
 /* Main */
-
-.intro {
+/* .intro {
   color: #243849;
   margin: 2rem;
-}
+} */
 
 .hero-image {
   display: block;
   margin: auto;
-  width: 55%;
+  width: 65%;
   padding: 2rem 1rem;
 }
 
@@ -119,17 +117,8 @@ p {
   color: #243849;
   border: 1px solid #243849;
 }
-/* Footer */
-
-footer {
-  text-align: center;
-  background-color: #243849;
-  color: #ffffff;
-  padding: 2.8rem;
-}
 
 /* Card */
-
 .card {
   box-shadow: 0 4px 8px 0 #243849;
   transition: 0.5s;
@@ -138,5 +127,111 @@ footer {
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 #243849;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #243849;
+  color: #ffffff;
+  padding: 2.8rem;
+}
+
+/*    Larger 
+          Screen 
+            (800px and up) */
+@media screen and (min-width: 1080px) {
+  /* Header */
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 5rem 3rem;
+  }
+
+  .header-main {
+    font-size: 3.5rem;
+  }
+
+  .header-sub {
+    font-size: 1.8rem;
+  }
+
+  /* Navigation */
+  /* Show the hidden links */
+  .topnav #myLinks {
+    display: flex;
+    gap: 2rem;
+  }
+
+  /* Hide hamburger icon */
+  .topnav a.icon {
+    display: none;
+  }
+
+  /* Make nav horizontal */
+  .topnav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .topnav a {
+    float: none;
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+
+  /* Main */
+  /* .intro card {
+    padding: 2rem;
+  } */
+
+  .hero-image {
+    width: 65%;
+    padding: 4rem 2rem;
+  }
+
+  h2 {
+    padding: 2rem 0 0 2rem;
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 1.5rem;
+    color: #243849;
+  }
+
+  .action {
+    padding: 1.5rem;
+    margin: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .action:hover {
+    background-color: #ffffff;
+    color: #243849;
+    border: 1px solid #243849;
+  }
+
+  /* Card */
+  .card {
+    box-shadow: 0 5px 10px 0 #243849;
+    transition: 0.5s;
+    width: 50%;
+    margin: 2rem auto;
+  }
+
+  .card:hover {
+    box-shadow: 0 10px 20px 0 #243849;
+  }
+}
+
+/* Footer */
+footer {
+  padding: 4rem;
+  font-size: 1.5rem;
 }
