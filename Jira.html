@@ -1,0 +1,551 @@
+<html
+        xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>Jira</title>
+<style type="text/css">
+table {
+    mso-displayed-decimal-separator:"\.";
+    mso-displayed-thousand-separator:"\,";
+}
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color:black;
+}
+
+</style>
+<META HTTP-EQUIV="Content-Type" Content="application/vnd.ms-excel; charset=UTF-8">
+<!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+<!--
+Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+since Excel does not use or save the css files it is hardcoded here.
+-->
+<style>
+@page
+{
+mso-page-orientation:landscape;
+margin:.25in .25in .5in .25in;
+mso-header-margin:.5in;
+mso-footer-margin:.25in;
+mso-footer-data:"&R&P of &N";
+mso-horizontal-page-align:center;
+mso-vertical-page-align:center;
+}
+
+td.issuekey,
+td.issuetype,
+td.status {
+    mso-style-parent: "";
+    mso-number-format: \@;
+    text-align: left;
+}
+br
+{
+    mso-data-placement:same-cell;
+}
+
+td
+{
+    vertical-align: top;
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>general_report</x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+
+<table border="1">
+    <tr bgcolor="#205081" height="30">
+        <td colspan="11">
+            <img src="https://application-project-group7.atlassian.net/images/icon-jira-family-logo.png" width="57" height="30" border="0" alt="Jira">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="11">
+            <a href="https://application-project-group7.atlassian.net/issues/?jql=project+%3D+SCRUM+AND+assignee+%3D+712020%3Aab3fad3d-dd74-4448-bf8c-531c0a672301+ORDER+BY+cf%5B10019%5D+ASC">Jira</a>
+        </td>
+    </tr>
+    <tr>
+                <td colspan="11">
+            Displaying <strong>14</strong> issues at <strong>22/Apr/26 8:01 PM</strong>.
+        </td>
+    </tr>
+</table>
+
+
+
+
+                                        <table id="issuetable" class="aui " border="1" cellpadding="3" cellspacing="1" width="100%">
+                        <thead>
+        <tr class="rowHeader">
+            
+                                                            <th class="colHeaderLink headerrow-issuetype" data-id="issuetype">
+                                                        Issue Type
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuekey" data-id="issuekey">
+                                                        Key
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-summary" data-id="summary">
+                                                        Summary
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-assignee" data-id="assignee">
+                                                        Assignee
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-reporter" data-id="reporter">
+                                                        Reporter
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-priority" data-id="priority">
+                                                        Priority
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-status" data-id="status">
+                                                        Status
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-resolution" data-id="resolution">
+                                                        Resolution
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-created" data-id="created">
+                                                        Created
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-updated" data-id="updated">
+                                                        Updated
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-duedate" data-id="duedate">
+                                                        Due date
+                                                    </th>
+                                                                    </tr>
+    </thead>
+    <tbody>
+                    
+
+                <tr id="issuerow10130" rel="10130" data-issuekey="SCRUM-35" class="issuerow">
+                                            <td class="issuetype">    Story
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SCRUM-35" href="https://application-project-group7.atlassian.net/browse/SCRUM-35">SCRUM-35</a>
+</td>
+                                            <td class="summary"><p>
+                As a parent/guardian, I want to know about the refund policy so that I understand my options if my child stops attending.
+    </p>
+</td>
+                                            <td class="assignee">            Adhip Bashar
+    </td>
+                                            <td class="reporter">            Adhip Bashar
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 29/Jan/26 8:14 PM </td>
+                                            <td class="updated"> 18/Mar/26 1:42 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10127" rel="10127" data-issuekey="SCRUM-32" class="issuerow">
+                                            <td class="issuetype">    Story
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SCRUM-32" href="https://application-project-group7.atlassian.net/browse/SCRUM-32">SCRUM-32</a>
+</td>
+                                            <td class="summary"><p>
+                As a parent/guardian, I want to know if the program is certified by the Ontario Association of Child and Youth Care so that I feel confident knowing standard child‑care guidelines are followed.
+    </p>
+</td>
+                                            <td class="assignee">            Adhip Bashar
+    </td>
+                                            <td class="reporter">            Adhip Bashar
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 29/Jan/26 7:59 PM </td>
+                                            <td class="updated"> 18/Mar/26 1:43 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10013" rel="10013" data-issuekey="SCRUM-14" class="issuerow">
+                                            <td class="issuetype">    Story
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SCRUM-14" href="https://application-project-group7.atlassian.net/browse/SCRUM-14">SCRUM-14</a>
+</td>
+                                            <td class="summary"><p>
+                As a parent/guardian, I want to be able to sign up for a newsletter so that I can get updates on the program
+    </p>
+</td>
+                                            <td class="assignee">            Adhip Bashar
+    </td>
+                                            <td class="reporter">            Ryan Maguire
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 23/Jan/26 12:31 PM </td>
+                                            <td class="updated"> 02/Apr/26 12:03 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10092" rel="10092" data-issuekey="SCRUM-29" class="issuerow">
+                                            <td class="issuetype">    Story
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SCRUM-29" href="https://application-project-group7.atlassian.net/browse/SCRUM-29">SCRUM-29</a>
+</td>
+                                            <td class="summary"><p>
+                As a parent/guardian, I want to sign up for e-mail notifications so that I can receive program updates.
+    </p>
+</td>
+                                            <td class="assignee">            Adhip Bashar
+    </td>
+                                            <td class="reporter">            h_kadayat
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 28/Jan/26 10:20 PM </td>
+                                            <td class="updated"> 02/Apr/26 12:03 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10010" rel="10010" data-issuekey="SCRUM-11" class="issuerow">
+                                            <td class="issuetype">    Story
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SCRUM-11" href="https://application-project-group7.atlassian.net/browse/SCRUM-11">SCRUM-11</a>
+</td>
+                                            <td class="summary"><p>
+                As a parent/guardian, I want to see where the business is located so that I can plan my potential visit
+    </p>
+</td>
+                                            <td class="assignee">            Adhip Bashar
+    </td>
+                                            <td class="reporter">            Ryan Maguire
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 23/Jan/26 12:26 PM </td>
+                                            <td class="updated"> 21/Feb/26 3:34 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10055" rel="10055" data-issuekey="SCRUM-24" class="issuerow">
+                                            <td class="issuetype">    Story
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SCRUM-24" href="https://application-project-group7.atlassian.net/browse/SCRUM-24">SCRUM-24</a>
+</td>
+                                            <td class="summary"><p>
+                As a parent/guardian, I want the site to be clearly laid out so that I can easily navigate it
+    </p>
+</td>
+                                            <td class="assignee">            Adhip Bashar
+    </td>
+                                            <td class="reporter">            Ryan Maguire
+    </td>
+                                            <td class="priority">           Highest
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 28/Jan/26 10:30 AM </td>
+                                            <td class="updated"> 21/Feb/26 3:34 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10051" rel="10051" data-issuekey="SCRUM-20" class="issuerow">
+                                            <td class="issuetype">    Story
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SCRUM-20" href="https://application-project-group7.atlassian.net/browse/SCRUM-20">SCRUM-20</a>
+</td>
+                                            <td class="summary"><p>
+                As a parent/guardian, I want to read about the benefits of the program, so that I feel confident it will help my child develop social skills.
+    </p>
+</td>
+                                            <td class="assignee">            Adhip Bashar
+    </td>
+                                            <td class="reporter">            h_kadayat
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 28/Jan/26 10:23 AM </td>
+                                            <td class="updated"> 21/Feb/26 3:34 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10047" rel="10047" data-issuekey="SCRUM-16" class="issuerow">
+                                            <td class="issuetype">    Story
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SCRUM-16" href="https://application-project-group7.atlassian.net/browse/SCRUM-16">SCRUM-16</a>
+</td>
+                                            <td class="summary"><p>
+                As a parent/guardian, I want to view information about the program, so that I can understand what activities are offered for my child.
+    </p>
+</td>
+                                            <td class="assignee">            Adhip Bashar
+    </td>
+                                            <td class="reporter">            h_kadayat
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 28/Jan/26 10:18 AM </td>
+                                            <td class="updated"> 21/Feb/26 3:34 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10056" rel="10056" data-issuekey="SCRUM-25" class="issuerow">
+                                            <td class="issuetype">    Story
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SCRUM-25" href="https://application-project-group7.atlassian.net/browse/SCRUM-25">SCRUM-25</a>
+</td>
+                                            <td class="summary"><p>
+                As a parent/guardian, I want to know what topics the program teaches so that I can see if it fills in gaps in my child&#39;s social skills
+    </p>
+</td>
+                                            <td class="assignee">            Adhip Bashar
+    </td>
+                                            <td class="reporter">            h_kadayat
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 28/Jan/26 10:30 AM </td>
+                                            <td class="updated"> 21/Feb/26 3:34 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10197" rel="10197" data-issuekey="SCRUM-37" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SCRUM-37" href="https://application-project-group7.atlassian.net/browse/SCRUM-37">SCRUM-37</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SCRUM-24</span>
+                Create a React project
+    </p>
+</td>
+                                            <td class="assignee">            Adhip Bashar
+    </td>
+                                            <td class="reporter">            Adhip Bashar
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 13/Feb/26 12:13 PM </td>
+                                            <td class="updated"> 13/Feb/26 12:14 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10199" rel="10199" data-issuekey="SCRUM-38" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SCRUM-38" href="https://application-project-group7.atlassian.net/browse/SCRUM-38">SCRUM-38</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SCRUM-24</span>
+                Create folders Components, Header, and Footer
+    </p>
+</td>
+                                            <td class="assignee">            Adhip Bashar
+    </td>
+                                            <td class="reporter">            Adhip Bashar
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 13/Feb/26 12:14 PM </td>
+                                            <td class="updated"> 13/Feb/26 12:15 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10201" rel="10201" data-issuekey="SCRUM-39" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SCRUM-39" href="https://application-project-group7.atlassian.net/browse/SCRUM-39">SCRUM-39</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SCRUM-24</span>
+                Create a starting template
+    </p>
+</td>
+                                            <td class="assignee">            Adhip Bashar
+    </td>
+                                            <td class="reporter">            Adhip Bashar
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 13/Feb/26 12:15 PM </td>
+                                            <td class="updated"> 13/Feb/26 12:15 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10203" rel="10203" data-issuekey="SCRUM-40" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SCRUM-40" href="https://application-project-group7.atlassian.net/browse/SCRUM-40">SCRUM-40</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SCRUM-24</span>
+                Push the project to GitHub repository
+    </p>
+</td>
+                                            <td class="assignee">            Adhip Bashar
+    </td>
+                                            <td class="reporter">            Adhip Bashar
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 13/Feb/26 12:15 PM </td>
+                                            <td class="updated"> 13/Feb/26 12:17 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10049" rel="10049" data-issuekey="SCRUM-18" class="issuerow">
+                                            <td class="issuetype">    Story
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SCRUM-18" href="https://application-project-group7.atlassian.net/browse/SCRUM-18">SCRUM-18</a>
+</td>
+                                            <td class="summary"><p>
+                As an admin, I want the website to be SEO-friendly, so that more users can find the program online.
+    </p>
+</td>
+                                            <td class="assignee">            Adhip Bashar
+    </td>
+                                            <td class="reporter">            h_kadayat
+    </td>
+                                            <td class="priority">           Highest
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 28/Jan/26 10:20 AM </td>
+                                            <td class="updated"> 18/Mar/26 1:43 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+        </tbody>
+    </table>
+    <div class="end-of-stable-message"></div>
+            <table border="1" >
+<tr>
+    <td bgcolor="#dddddd" colspan="11"><font size="1">
+        Generated at Thu Apr 23 00:01:42 UTC 2026 by Adhip Bashar using Jira 1001.0.0-SNAPSHOT#100291-rev:5177f96791252404c766ca1ff3f185116ee1a1a1.
+    </font></td>
+</tr>
+</table>
+
+</body>
+</html>

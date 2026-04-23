@@ -1,0 +1,37 @@
+/*      MOBILE 
+            FIRST      */
+
+h3 {
+  padding: 1rem 0 0 1rem;
+  font-size: 1.6rem;
+  color: #243849;
+}
+
+h4 {
+  padding: 1.5rem 2rem;
+  font-size: 1.4rem;
+  color: #243849;
+}
+
+.redesign-image {
+  display: block;
+  margin: auto;
+  width: 85%;
+  padding: 3rem 1rem;
+}
+
+ul,
+li {
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  list-style: disc;
+  color: #243849;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 0 0 1rem 0;
+}
